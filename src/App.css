@@ -1,0 +1,117 @@
+main{
+    display: flex;
+
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 32px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 240px;
+}
+
+ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .54);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .54);
+       -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .54);
+}
+
+button{
+    width: 240px;
+    cursor: pointer;
+}
+
+ul li button{
+    width: inherit;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #555555;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .7rem;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+button:active{
+    transform: scale(.9);
+    opacity: .9;
+}
+
+input{
+    width: 240px;
+    margin-bottom: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+a{
+    /* display: block; */
+    padding: 4px;
+    text-align: center;
+
+    /* color: lightblue; */
+}
+
+a:visited{
+    color: inherit;
+}
+
+ol{
+    height: 100vh;
+    max-width: 40vw;
+    padding: 32px;
+    margin: 0;
+    border-right: 1px solid #cccccc;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+ol::before{
+    content: "目次";
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+    margin-left: -4px;
+    color: rgba(0, 0, 0, .87);
+}
+
+ol li{
+    padding: 4px;
+    list-style-type: none;
+}
+
+ol li span{
+    display: block;
+    margin-left: 4px;
+    color: rgba(0, 0, 0, .54);
+}
+
+li ul{
+    width: auto;
+    list-style-position: outside;
+    list-style-type: circle;
+}
+
+li ul li{
+    width: auto;
+    box-shadow: none;
+    list-style-type: circle;
+}
+
+h3{
+    font-weight: 400;
+    color: rgba(0, 0, 0, .87);
+}
